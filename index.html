@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHkids - Learning Technology for Kids</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Welcome to TECHkids</h1>
+        <p class="tagline">Where kids learn technology in a fun way</p>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="card">
+            <h2>About TECHkids</h2>
+            <p>TECHkids offers fun technology courses for children ages 8-14. Our mission is to make technology education accessible and enjoyable for young learners.</p>
+            
+            <div class="features">
+                <div class="feature-box">
+                    <h3>Why Choose Us?</h3>
+                    <ul>
+                        <li>Fun, project-based learning</li>
+                        <li>Small class sizes</li>
+                        <li>Certified instructors</li>
+                        <li>Safe online environment</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>Our Approach</h3>
+                    <ul>
+                        <li>Hands-on activities</li>
+                        <li>Creative problem solving</li>
+                        <li>Collaborative projects</li>
+                        <li>Real-world applications</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="card">
+            <h2>Our Courses</h2>
+            
+            <div class="course-grid">
+                <article class="course-card">
+                    <h3>Intro to Coding</h3>
+                    <p>Learn basic programming concepts through fun games and animations.</p>
+                    <ul>
+                        <li>Ages: 8-10</li>
+                        <li>Duration: 8 weeks</li>
+                        <li>Price: $199</li>
+                    </ul>
+                    <button class="btn">Learn More</button>
+                </article>
+
+                <article class="course-card">
+                    <h3>Game Design</h3>
+                    <p>Create your own video games using kid-friendly development tools.</p>
+                    <ul>
+                        <li>Ages: 10-12</li>
+                        <li>Duration: 10 weeks</li>
+                        <li>Price: $249</li>
+                    </ul>
+                    <button class="btn">Learn More</button>
+                </article>
+
+                <article class="course-card">
+                    <h3>Web Development</h3>
+                    <p>Build your first website with HTML, CSS, and JavaScript basics.</p>
+                    <ul>
+                        <li>Ages: 12-14</li>
+                        <li>Duration: 12 weeks</li>
+                        <li>Price: $299</li>
+                    </ul>
+                    <button class="btn">Learn More</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery" class="card">
+            <h2>Student Projects</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/29445974/pexels-photo-29445974.jpeg" alt="Coding project by Sarah">
+                    <p>Sarah's Game Project</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/8524959/pexels-photo-8524959.jpeg" alt="Website by Alex">
+                    <p>Alex's Website</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/4705619/pexels-photo-4705619.jpeg?cs=srgb&dl=pexels-cottonbro-4705619.jpg&fm=jpg" alt="Animation by Jamie">
+                    <p>Jamie's Animation</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/8294674/pexels-photo-8294674.jpeg" alt="Robot by Taylor">
+                    <p>Taylor's Robot</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Parent's Name <span class="required-field">*</span></label>
+                    <input type="text" id="name" name="name" required minlength="2">
+                    <span class="hint">(Minimum 2 letters)</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email <span class="required-field">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="child-name">Child's Name</label>
+                    <input type="text" id="child-name" name="child-name" minlength="2">
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Child's Age</label>
+                    <input type="number" id="age" name="age" min="8" max="14">
+                </div>
+                
+                <div class="form-group">
+                    <label>Child's Gender</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2023 TECHkids. All rights reserved.</p>
+        <p>123 Tech Street, Digital City, DC 10101</p>
+    </footer>
+</body>
+</html>
